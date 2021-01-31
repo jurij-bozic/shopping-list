@@ -21,12 +21,7 @@ First, set up the local JSON server by running `json-server --watch data.json`. 
 Then start the project with `npm start`, which will prompt you to select a new port, which means it will run on `http://localhost:3001/`.
 
 
-
-
-## Angular packages
-
-The following Angular packages may need to be installed in order to run the app: `ng add @angular/material`, `ng add @angular/forms`.
-
 ## Browser support
-The app has been tested in current versions of Chrome, Firefox and Safari. While the app works fine in Chrome and Firefox, the user-search functionality needs some debugging in **Safari**.
+Axios http-requests should work out of the box in current versions of **Safari**. However, for **Firefox**/**Chrome**, CORS restrictions should be disabled.
+
 
