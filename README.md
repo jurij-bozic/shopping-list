@@ -22,6 +22,6 @@ Then start the project with `npm start`, which will prompt you to select a new p
 
 
 ## Browser support
-Axios http-requests should work out of the box in current versions of **Safari**. However, for **Firefox**/**Chrome**, CORS restrictions should be disabled.
+Axios is used for http-requests in this app. It should work out of the box in current versions of **Safari**. However, for **Firefox**/**Chrome**, CORS restrictions should be disabled.
 
 
