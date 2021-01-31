@@ -16,9 +16,11 @@ Since the `node_modules` file is not inclued in the repository, first run `npm i
 
 ## Development server
 
-First, set up the local JSON server by running `json-server --watch data.json`. This will run on `http://localhost:3000/`. Then start the project with `npm start`, which will prompt you to select a new port, which means it will run on `http://localhost:3001/`.
+First, set up the local JSON server by running `json-server --watch data.json`. This will run on `http://localhost:3000/`. 
 
-Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Then start the project with `npm start`, which will prompt you to select a new port, which means it will run on `http://localhost:3001/`.
+
+
 
 
 ## Angular packages
