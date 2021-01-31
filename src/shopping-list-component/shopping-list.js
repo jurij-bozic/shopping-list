@@ -78,7 +78,7 @@ class ShoppingList extends Component {
               <div className="item-parent" key={listItem.id}>
                   <input className="check-style" type="checkbox" checked={listItem.checked} onChange={(value) => this.updateItem(listItem.id, listItem.text, value.target.checked)}/>
                   <input className="input-style" type="text" key={listItem.id} value={listItem.text}  onChange={(value) => this.modifyInput(value.target.value, listItem.id)}/>
-                  <button onClick={() => this.updateItem(listItem.id, listItem.text)}>Create</button>
+                  <button onClick={() => this.updateItem(listItem.id, listItem.text)}>Save</button>
                   <button className="delete-btn" onClick={() => this.deleteItem(listItem.id)}>X</button>
               </div>
             )}
