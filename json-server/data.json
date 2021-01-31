@@ -1,0 +1,34 @@
+{
+  "shoppingList1": [
+    {
+      "id": 1,
+      "text": "kjhddkjsshajhkh"
+    },
+    {
+      "id": 2,
+      "text": "I was trying to see whter it would be possible for metro try andrpdce"
+    },
+    {
+      "id": 3,
+      "text": "kgd"
+    },
+    {
+      "id": 4,
+      "text": "TESTS"
+    },
+    {
+      "id": 5,
+      "text": "Jurij is testing this now"
+    }
+  ],
+  "users": [
+    {
+      "userName": "John Smith",
+      "loggedIn": false
+    },
+    {
+      "userName": "Jane Smith",
+      "loggedIn": false
+    }
+  ]
+}
