@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import '../App.css';
+import '../App.css';
 import axios from 'axios'
+import { Link } from 'react-router-dom';
 
 
 const api = axios.create({
@@ -70,14 +71,15 @@ class ShoppingList extends Component {
   
       return (
         <div className="App">
+        <div id="back-container"><Link to='/login'><button>Back</button></Link></div> 
           <header className="App-header">
-            <button onClick={this.createItem}>Create Item</button>
+            <button id="create-btn" onClick={this.createItem}>Create Item</button>
             {this.state.list.map(listItem => 
-              <div key={listItem.id}>
-                  <input type="checkbox" checked={listItem.checked} onChange={(value) => this.updateItem(listItem.id, listItem.text, value.target.checked)}/>
-                  <input type="text" key={listItem.id} value={listItem.text}  onChange={(value) => this.modifyInput(value.target.value, listItem.id)}/>
+              <div className="item-parent" key={listItem.id}>
+                  <input className="check-style" type="checkbox" checked={listItem.checked} onChange={(value) => this.updateItem(listItem.id, listItem.text, value.target.checked)}/>
+                  <input className="input-style" type="text" key={listItem.id} value={listItem.text}  onChange={(value) => this.modifyInput(value.target.value, listItem.id)}/>
                   <button onClick={() => this.updateItem(listItem.id, listItem.text)}>Create</button>
-                  <button onClick={() => this.deleteItem(listItem.id)}>X</button>
+                  <button className="delete-btn" onClick={() => this.deleteItem(listItem.id)}>X</button>
               </div>
             )}
       <br/>

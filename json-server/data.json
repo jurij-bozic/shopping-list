@@ -19,6 +19,11 @@
       "id": 4,
       "text": "meat",
       "checked": false
+    },
+    {
+      "id": 5,
+      "text": "",
+      "checked": false
     }
   ],
   "users": [

@@ -1,17 +1,15 @@
 .App {
   text-align: center;
+  background-color: #1b1f27;
+  line-height: 6vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#back-container {
+  width: 100%;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +26,48 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.input-style {
+  margin: 2vw;
+  width: 40vw;
+  height: 4vw;
+  border-radius: 5px;
+  background-color: rgb(207, 207, 207);
+}
+.item-parent {
+  border: 2px solid rgb(117, 117, 117);
+  border-radius: 5px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+button {
+  background-color: rgb(114, 122, 131);
+  border-radius: 4px;
+  width: 6em;
+  height: 2.5em;
+}
+
+.delete-btn {
+  width: 3.2em !important;
+  font-weight: bold;
+}
+
+#create-btn {
+  width: 10em;
+  height: 3em;
+  margin-bottom: 2vw;
+}
+
+.check-style {
+  width: 3vw;
+  height: 3vw;
+}
+
+#login-input {
+  margin: 4vw;
+  width: 30vw;
+  height: 4vw;
+  border-radius: 4px;
+  padding: 0.5vw;
 }

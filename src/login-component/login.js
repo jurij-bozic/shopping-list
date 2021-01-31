@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../App.css';
 import axios from 'axios'
 
 
@@ -37,9 +38,11 @@ class Login extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <form onSubmit={(event) => this.verifyUser(event.target.firstChild.value)}>
-                        <input type='text' placeholder='Enter username to log-in'/>
-                            <button type="submit">Log-In</button>
+                   <h1>Shopping List App</h1>
+                    <form id="login-form" onSubmit={(event) => this.verifyUser(event.target.firstChild.value)}>
+                        <input id="login-input" type='text' placeholder='Enter username to log-in'/>
+                        <br />
+                        <button type="submit">Log-In</button>
                     </form>
                 </header>
             </div>
