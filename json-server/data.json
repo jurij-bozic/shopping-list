@@ -2,23 +2,23 @@
   "shoppingList1": [
     {
       "id": 1,
-      "text": "kjhddkjsshajhkh"
+      "text": "bread",
+      "checked": true
     },
     {
       "id": 2,
-      "text": "I was trying to see whter it would be possible for metro try andrpdce"
+      "text": "coffee",
+      "checked": true
     },
     {
       "id": 3,
-      "text": "kgd"
+      "text": "beer",
+      "checked": false
     },
     {
       "id": 4,
-      "text": "TESTS"
-    },
-    {
-      "id": 5,
-      "text": "test"
+      "text": "meat",
+      "checked": false
     }
   ],
   "users": [
