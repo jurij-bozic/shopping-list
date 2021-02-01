@@ -12,7 +12,7 @@ This app requires the following packages to run (in addition to React itself):
 
 ## Before running Dev server
 
-Since the `node_modules` file is not inclued in the repository, first run `npm i` to install them.
+Since the `node_modules` file is not inclued in the repository, first run `npm i` to install it.
 
 
 ## Development server
