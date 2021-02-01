@@ -1,3 +1,10 @@
+button {
+  background-color: rgb(114, 122, 131);
+  border-radius: 4px;
+  width: 6em;
+  height: 2.5em;
+}
+
 .App {
   text-align: center;
   background-color: #1b1f27;
@@ -8,8 +15,6 @@
   width: 100%;
   text-align: left;
 }
-
-
 
 .App-header {
   background-color: #282c34;
@@ -26,26 +31,19 @@
   color: #61dafb;
 }
 
-
 .input-style {
   margin: 2vw;
   width: 40vw;
-  height: 4vw;
+  height: 3em;
   border-radius: 5px;
   background-color: rgb(207, 207, 207);
+  font-size: medium;
 }
 .item-parent {
   border: 2px solid rgb(117, 117, 117);
   border-radius: 5px;
   padding-left: 2vw;
   padding-right: 2vw;
-}
-
-button {
-  background-color: rgb(114, 122, 131);
-  border-radius: 4px;
-  width: 6em;
-  height: 2.5em;
 }
 
 .delete-btn {
@@ -67,7 +65,8 @@ button {
 #login-input {
   margin: 4vw;
   width: 30vw;
-  height: 4vw;
+  height: 2em;
   border-radius: 4px;
   padding: 0.5vw;
+  font-size: medium;
 }

@@ -26,9 +26,9 @@ class ShoppingList extends Component {
       this.updateItem = this.updateItem.bind(this)
     }
 
-  
+    //data is refreshed every 20s
     refreshData = () => {
-      setInterval(() => this.getList(), 30000);
+      setInterval(() => this.getList(), 20000);
     }
     getList = async () => {
       let data = await api.get('/').then(({data}) => data);
@@ -76,9 +76,14 @@ class ShoppingList extends Component {
             <button id="create-btn" onClick={this.createItem}>Create Item</button>
             {this.state.list.map(listItem => 
               <div className="item-parent" key={listItem.id}>
-                  <input className="check-style" type="checkbox" checked={listItem.checked} onChange={(value) => this.updateItem(listItem.id, listItem.text, value.target.checked)}/>
-                  <input className="input-style" type="text" key={listItem.id} value={listItem.text}  onChange={(value) => this.modifyInput(value.target.value, listItem.id)}/>
+                  <input className="check-style" type="checkbox" checked={listItem.checked} 
+                    onChange={(value) => this.updateItem(listItem.id, listItem.text, value.target.checked)}/>
+
+                  <input className="input-style" type="text" key={listItem.id} value={listItem.text}  
+                    onChange={(value) => this.modifyInput(value.target.value, listItem.id)}/>
+
                   <button onClick={() => this.updateItem(listItem.id, listItem.text)}>Save</button>
+
                   <button className="delete-btn" onClick={() => this.deleteItem(listItem.id)}>X</button>
               </div>
             )}
@@ -91,5 +96,3 @@ class ShoppingList extends Component {
   }
   
   export default ShoppingList;
-
-  // (value) => this.updateItem(listItem.id, value.target.value)
