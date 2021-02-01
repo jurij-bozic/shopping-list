@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## NPM packages
 
 This app requires the following packages to run (except from React itself):
+- Axios: `npm install axios`
 - JSON Server: `npm install -g json-server`
 - React Router DOM: `npm install react-router-dom`
 
